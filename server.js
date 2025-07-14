@@ -8,6 +8,10 @@ const PORT = process.env.PORT || 3000;
 // Middleware to parse JSON payloads
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Subscribe to Arpan Neupane's channel");
+});
+
 // Route to get all employee records
 app.get('/api/employees', (req, res) => {
   try {
