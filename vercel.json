@@ -6,7 +6,7 @@
       "destination": "/api"
     }
   ],
-  "build": [
+  "builds": [
     {"src": "server.js", "use": "@vercel/node"}
   ]
 }
